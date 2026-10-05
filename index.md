@@ -107,13 +107,13 @@ cd ..
 ```
 
 >[!NOTE]
-> "Absolute vs. relative paths"
+> **Absolute vs. relative paths**
 >    - **Absolute** paths start at the root: `/home/ana/cli-workshop/data`
 >    - **Relative** paths start where you are: `data/fruits.txt`
 >    - `.` means "here" and `..` means "one level up".
 
 >[!WARNING]
-> "Spaces in paths are bad"
+> **Spaces in paths are bad**<br>
 > `my data` will be read as two separate things. Use `my_data` or `my-data` instead.
 
 ---
@@ -138,8 +138,9 @@ mv results/fruits_copy.txt results/backup.txt
 ls results
 ```
 
-!!! danger "There is no Recycle Bin"
-    `rm` deletes immediately and permanently. Double-check before pressing Enter. Use `rm -i` to be asked for confirmation.
+>[!CAUTION]
+>**There is no Recycle Bin**<br>
+>`rm` deletes immediately and permanently. Double-check before pressing Enter. Use `rm -i` to be asked for confirmation.
 
 ### Wildcards
 
@@ -182,46 +183,53 @@ sort data/fruits.txt | uniq                      # unique fruits
 sort data/fruits.txt | uniq -c | sort -nr        # how often each fruit appears
 ```
 
-!!! note "Think of pipes as an assembly line"
-    Each command does one small job and passes its result to the next. Combining simple tools is the core idea of the command line.
+>[!NOTE]
+>**Think of pipes as an assembly line**<br>
+>Each command does one small job and passes its result to the next. Combining simple tools is the core idea of the command line.
 
 ---
 
 ## Exercises
 
 **1.** How many lines in `data/log.txt` contain `INFO`?
-
-??? success "Solution"
-    ```bash
-    grep -c INFO data/log.txt
-    ```
-    Answer: 3
+<details>
+<summary>Click to see solution</summary>
+  
+```bash
+grep -c INFO data/log.txt
+```
+Answer: 3  </details>
 
 **2.** Show the scores file without its header line.
-
-??? success "Solution"
-    ```bash
-    tail -n +2 data/scores.csv
-    ```
+<details>
+<summary>Click to see solution</summary>
+  
+```bash
+tail -n +2 data/scores.csv
+```
+</details>
+    
 
 **3.** Make a folder called `archive`, copy every `.txt` file from `data/` into it, then list it.
+<details>
+<summary>Click to see solution</summary>
 
-??? success "Solution"
-    ```bash
-    mkdir archive
-    cp data/*.txt archive/
-    ls archive
-    ```
+```bash
+mkdir archive
+cp data/*.txt archive/
+ls archive
+```
+</details>
 
 **4.** Save the list of unique fruits, sorted alphabetically, to `results/unique_fruits.txt`.
-
-??? success "Solution"
-    ```bash
-    sort data/fruits.txt | uniq > results/unique_fruits.txt
-    cat results/unique_fruits.txt
-    ```
-
----
+<details>
+<summary>Click to see solution</summary>
+  
+```bash
+sort data/fruits.txt | uniq > results/unique_fruits.txt
+cat results/unique_fruits.txt
+```
+</details>
 
 ## Cheat sheet
 
