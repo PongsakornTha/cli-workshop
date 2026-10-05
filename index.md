@@ -192,7 +192,7 @@ sort data/fruits.txt | uniq -c | sort -nr        # how often each fruit appears
 
 **1.** How many lines in `data/log.txt` contain `INFO`?
 
-<details>
+<details markdown="1">
 <summary>Click to see solution</summary>
 
 ```bash
@@ -201,6 +201,7 @@ grep -c INFO data/log.txt
 
 Answer: 3
 
+</details>
 </details>
 
 **2.** Show the scores file without its header line.
