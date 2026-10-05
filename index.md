@@ -10,6 +10,7 @@
 | • [Navigating Files](#navigating-the-file-system) | • [Cheat Sheet](#cheat-sheet) |
 | • [File Operations](#working-with-files-and-folders) | • [Resources](#further-learning) |
 
+> [!IMPORTANT]
 > **🕐 Schedule**
 >
 > - 0:00–0:10 — Welcome and why the command line matters
@@ -21,7 +22,7 @@
 > - 1:55–2:00 — Wrap-up and cheat sheet
 
 > [!IMPORTANT]
-> **❗ Requirements**
+> **⚙️️ Requirements**
 > - No prior experience needed
 > - Access to a terminal:
 >     - **Mac / Linux:** open the *Terminal* app
