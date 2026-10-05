@@ -7,9 +7,20 @@
   .markdown-alert-important { border-color: #8250df; background: #fbefff; } .markdown-alert-important .markdown-alert-title { color: #8250df; }
   .markdown-alert-warning   { border-color: #9a6700; background: #fff8c5; } .markdown-alert-warning .markdown-alert-title { color: #9a6700; }
   .markdown-alert-caution   { border-color: #cf222e; background: #ffebe9; } .markdown-alert-caution .markdown-alert-title { color: #cf222e; }
+
+  /* Copy button */
+  pre { position: relative; }
+  .copy-btn {
+    position: absolute; top: 8px; right: 8px;
+    padding: 4px 10px; font-size: 12px; cursor: pointer;
+    border: 1px solid #d0d7de; border-radius: 6px;
+    background: #fff; color: #24292f; opacity: 0.7;
+  }
+  .copy-btn:hover { opacity: 1; }
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  // Alerts
   var icons = { note: "ℹ️", tip: "💡", important: "❗", warning: "⚠️", caution: "🛑" };
   document.querySelectorAll("blockquote").forEach(function (bq) {
     var p = bq.querySelector("p");
@@ -24,6 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
     title.textContent = icons[type] + " " + type.charAt(0).toUpperCase() + type.slice(1);
     bq.insertBefore(title, bq.firstChild);
     bq.classList.add("markdown-alert", "markdown-alert-" + type);
+  });
+
+  // Copy buttons on code blocks
+  document.querySelectorAll("pre").forEach(function (pre) {
+    var btn = document.createElement("button");
+    btn.className = "copy-btn";
+    btn.type = "button";
+    btn.textContent = "Copy";
+    btn.addEventListener("click", function () {
+      var code = pre.querySelector("code") || pre;
+      navigator.clipboard.writeText(code.innerText.trim()).then(function () {
+        btn.textContent = "Copied!";
+        setTimeout(function () { btn.textContent = "Copy"; }, 1500);
+      });
+    });
+    pre.appendChild(btn);
   });
 });
 </script>
