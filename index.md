@@ -46,10 +46,13 @@ The command line lets you talk to your computer by typing instructions instead o
 
 ## Anatomy of a command
 
-```
+```text
 user@laptop:~/workshop$ ls -l data/
-└──────── prompt ──────┘ └┬┘ └┬┘ └─┬─┘
-                     command flag  argument
+^^^^^^^^^^^^^^^^^^^^^^^ ^^ ^^ ^^^^^
+           |            |  |    |
+        prompt          |  | argument
+                        |  flag
+                     command
 ```
 
 - **Prompt** — shows who and where you are. You never type it.
