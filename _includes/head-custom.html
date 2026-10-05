@@ -1,0 +1,29 @@
+<style>
+  .markdown-alert { padding: .5rem 1rem; margin-bottom: 1rem; border-left: .25em solid; border-radius: 6px; }
+  .markdown-alert > :last-child { margin-bottom: 0; }
+  .markdown-alert-title { font-weight: 600; margin-bottom: .25rem; }
+  .markdown-alert-note      { border-color: #0969da; background: #ddf4ff; } .markdown-alert-note .markdown-alert-title { color: #0969da; }
+  .markdown-alert-tip       { border-color: #1a7f37; background: #dafbe1; } .markdown-alert-tip .markdown-alert-title { color: #1a7f37; }
+  .markdown-alert-important { border-color: #8250df; background: #fbefff; } .markdown-alert-important .markdown-alert-title { color: #8250df; }
+  .markdown-alert-warning   { border-color: #9a6700; background: #fff8c5; } .markdown-alert-warning .markdown-alert-title { color: #9a6700; }
+  .markdown-alert-caution   { border-color: #cf222e; background: #ffebe9; } .markdown-alert-caution .markdown-alert-title { color: #cf222e; }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var icons = { note: "ℹ️", tip: "💡", important: "❗", warning: "⚠️", caution: "🛑" };
+  document.querySelectorAll("blockquote").forEach(function (bq) {
+    var p = bq.querySelector("p");
+    if (!p) return;
+    var m = p.innerHTML.match(/^\s*\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*(<br\s*\/?>)?\s*/i);
+    if (!m) return;
+    var type = m[1].toLowerCase();
+    p.innerHTML = p.innerHTML.slice(m[0].length);
+    if (!p.innerHTML.trim()) p.remove();
+    var title = document.createElement("p");
+    title.className = "markdown-alert-title";
+    title.textContent = icons[type] + " " + type.charAt(0).toUpperCase() + type.slice(1);
+    bq.insertBefore(title, bq.firstChild);
+    bq.classList.add("markdown-alert", "markdown-alert-" + type);
+  });
+});
+</script>
