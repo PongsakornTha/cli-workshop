@@ -1,25 +1,32 @@
 # Intro to the Command Line
+*by Pongsakorn Thawornpan,PhD / Department of Community Medical Technology, Factulty of Medical Technology, Mahidol University, 2026.*
+*email: pongsakorn.tha@mahidol.ac.th*
 
-!!! important "🕐 Schedule"
-    - 0:00–0:10 — Welcome and why the command line matters
-    - 0:10–0:25 — Anatomy of a command
-    - 0:25–0:50 — Navigating the file system
-    - 0:50–1:15 — Creating, copying, moving and deleting files
-    - 1:15–1:40 — Viewing and searching file contents
-    - 1:40–1:55 — Pipes and redirection
-    - 1:55–2:00 — Wrap-up and cheat sheet
+> [!IMPORTANT]
+> **🕐 Schedule**
+>
+> - 0:00–0:10 — Welcome and why the command line matters
+> - 0:10–0:25 — Anatomy of a command
+> - 0:25–0:50 — Navigating the file system
+> - 0:50–1:15 — Creating, copying, moving and deleting files
+> - 1:15–1:40 — Viewing and searching file contents
+> - 1:40–1:55 — Pipes and redirection
+> - 1:55–2:00 — Wrap-up and cheat sheet
 
-!!! important "❗ Requirements"
-    - No prior experience needed
-    - Access to a terminal:
-        - **Mac / Linux:** open the *Terminal* app
-        - **Windows:** install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) or [Git Bash](https://git-scm.com/downloads)
+> [!IMPORTANT]
+> **❗ Requirements**
+> - No prior experience needed
+> - Access to a terminal:
+>     - **Mac / Linux:** open the *Terminal* app
+>     - **Windows:** install [WSL](https://example.com) or [Git Bash](https://example.com)[span_1](start_span)[span_1](end_span)
 
-!!! important "✅ Expected Outcomes"
-    - Move around the file system confidently
-    - Create, copy, move and remove files and folders
-    - Read and search text files
-    - Chain commands together with pipes
+
+> [!IMPORTANT]
+>**✅ Expected Outcomes**
+>    - Move around the file system confidently
+>    - Create, copy, move and remove files and folders
+>    - Read and search text files
+>    - Chain commands together with pipes
 
 ---
 
@@ -224,4 +231,3 @@ sort data/fruits.txt | uniq -c | sort -nr        # how often each fruit appears
 
 ---
 
-*by Pongsakorn Thawornpan / Department of Community Medical Technology, Factulty of Medical Technology, Mahidol University, 2026.*
