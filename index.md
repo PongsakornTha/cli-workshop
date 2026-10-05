@@ -1,6 +1,6 @@
 # Intro to the Command Line
 
-!!! important "🕐 Schedule"
+!!! important "⏱️ Schedule"
     - 0:00–0:10 — Welcome and why the command line matters
     - 0:10–0:25 — Anatomy of a command
     - 0:25–0:50 — Navigating the file system
@@ -8,6 +8,7 @@
     - 1:15–1:40 — Viewing and searching file contents
     - 1:40–1:55 — Pipes and redirection
     - 1:55–2:00 — Wrap-up and cheat sheet
+
 
 !!! important "❗ Requirements"
     - No prior experience needed
