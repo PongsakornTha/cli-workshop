@@ -224,4 +224,4 @@ sort data/fruits.txt | uniq -c | sort -nr        # how often each fruit appears
 
 ---
 
-*Your Name / Your Organization, 2026.*
+*by Pongsakorn Thawornpan / Department of Community Medical Technology, Factulty of Medical Technology, Mahidol University, 2026.*
