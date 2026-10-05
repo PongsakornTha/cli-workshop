@@ -2,8 +2,14 @@
 *by Pongsakorn Thawornpan,PhD / Department of Community Medical Technology, Factulty of Medical Technology, Mahidol University, 2026.*
 *email: pongsakorn.tha@mahidol.ac.th*
 
-### 📍 Quick Navigation
-[Overview](#why-the-command-line) • [Anatomy of a Command](#anatomy-of-a-command) • [Setup](#setup-create-practice-files) • [Navigating Files](#navigating-the-file-system) • [File Operations](#working-with-files-and-folders) • [Viewing & Searching](#viewing-and-searching-files) • [Pipes & Redirection](#pipes-and-redirection) • [Exercises](#exercises) • [Cheat Sheet](#cheat-sheet) • [Resources](#further-learning)
+| 📍 Quick Navigation | |
+|---|---|
+| • [Overview](#why-the-command-line) | • [Viewing & Searching](#viewing-and-searching-files) |
+| • [Anatomy of a Command](#anatomy-of-a-command) | • [Pipes & Redirection](#pipes-and-redirection) |
+| • [Setup](#setup-create-practice-files) | • [Exercises](#exercises) |
+| • [Navigating Files](#navigating-the-file-system) | • [Cheat Sheet](#cheat-sheet) |
+| • [File Operations](#working-with-files-and-folders) | • [Resources](#further-learning) |
+
 
 > [!IMPORTANT]
 > **🕐 Schedule**
@@ -100,13 +106,15 @@ ls -l
 cd ..
 ```
 
-!!! note "Absolute vs. relative paths"
-    - **Absolute** paths start at the root: `/home/ana/cli-workshop/data`
-    - **Relative** paths start where you are: `data/fruits.txt`
-    - `.` means "here" and `..` means "one level up".
+>[!NOTE]
+> "Absolute vs. relative paths"
+>    - **Absolute** paths start at the root: `/home/ana/cli-workshop/data`
+>    - **Relative** paths start where you are: `data/fruits.txt`
+>    - `.` means "here" and `..` means "one level up".
 
-!!! warning "Spaces in paths are bad"
-    `my data` will be read as two separate things. Use `my_data` or `my-data` instead.
+>[!WARNING]
+> "Spaces in paths are bad"
+> `my data` will be read as two separate things. Use `my_data` or `my-data` instead.
 
 ---
 
