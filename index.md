@@ -10,8 +10,6 @@
 | • [Navigating Files](#navigating-the-file-system) | • [Cheat Sheet](#cheat-sheet) |
 | • [File Operations](#working-with-files-and-folders) | • [Resources](#further-learning) |
 
-
-> [!IMPORTANT]
 > **🕐 Schedule**
 >
 > - 0:00–0:10 — Welcome and why the command line matters
