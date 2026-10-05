@@ -2,6 +2,9 @@
 *by Pongsakorn Thawornpan,PhD / Department of Community Medical Technology, Factulty of Medical Technology, Mahidol University, 2026.*
 *email: pongsakorn.tha@mahidol.ac.th*
 
+### 📍 Quick Navigation
+[Overview](#why-the-command-line) • [Anatomy of a Command](#anatomy-of-a-command) • [Setup](#setup-create-practice-files) • [Navigating Files](#navigating-the-file-system) • [File Operations](#working-with-files-and-folders) • [Viewing & Searching](#viewing-and-searching-files) • [Pipes & Redirection](#pipes-and-redirection) • [Exercises](#exercises) • [Cheat Sheet](#cheat-sheet) • [Resources](#further-learning)
+
 > [!IMPORTANT]
 > **🕐 Schedule**
 >
