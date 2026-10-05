@@ -190,7 +190,7 @@ sort data/fruits.txt | uniq -c | sort -nr        # how often each fruit appears
 
 ## Exercises
 
-**1.** How many lines in `data/log.txt` contain `INFO`?
+**1.** **How many lines in `data/log.txt` contain `INFO`?**
 
 <details markdown="1">
 <summary>Click to see solution</summary>
@@ -202,7 +202,7 @@ grep -c INFO data/log.txt
 Answer: 3
 </details>
 
-**2.** Show the scores file without its header line.
+**2.** **Show the scores file without its header line.**
 
 <details markdown="1">
 <summary>Click to see solution</summary>
@@ -213,7 +213,7 @@ tail -n +2 data/scores.csv
 
 </details>
 
-**3.** Make a folder called `archive`, copy every `.txt` file from `data/` into it, then list it.
+**3.** **Make a folder called `archive`, copy every `.txt` file from `data/` into it, then list it.**
 
 <details markdown="1">
 <summary>Click to see solution</summary>
@@ -226,7 +226,7 @@ ls archive
 
 </details>
 
-**4.** Save the list of unique fruits, sorted alphabetically, to `results/unique_fruits.txt`.
+**4.** **Save the list of unique fruits, sorted alphabetically, to `results/unique_fruits.txt`.**
 
 <details markdown="1">
 <summary>Click to see solution</summary>
