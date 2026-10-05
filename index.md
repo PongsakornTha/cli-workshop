@@ -202,20 +202,22 @@ grep -c INFO data/log.txt
 Answer: 3
 
 </details>
-</details>
 
 **2.** Show the scores file without its header line.
-<details>
+
+<details markdown="1">
 <summary>Click to see solution</summary>
-  
+
 ```bash
 tail -n +2 data/scores.csv
 ```
+
 </details>
     
 
 **3.** Make a folder called `archive`, copy every `.txt` file from `data/` into it, then list it.
-<details>
+
+<details markdown="1">
 <summary>Click to see solution</summary>
 
 ```bash
@@ -223,16 +225,19 @@ mkdir archive
 cp data/*.txt archive/
 ls archive
 ```
+
 </details>
 
 **4.** Save the list of unique fruits, sorted alphabetically, to `results/unique_fruits.txt`.
-<details>
+
+<details markdown="1">
 <summary>Click to see solution</summary>
   
 ```bash
 sort data/fruits.txt | uniq > results/unique_fruits.txt
 cat results/unique_fruits.txt
 ```
+
 </details>
 
 ## Cheat sheet
