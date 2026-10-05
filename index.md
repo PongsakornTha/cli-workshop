@@ -49,16 +49,18 @@ user@laptop:~/workshop$ ls -l data/
 - **Flag / option** — changes how the command behaves (`-l` = long format).
 - **Argument** — what the command acts on (a file or folder).
 
-!!! tip "Getting help"
-    Almost every command explains itself:
-    ```bash
-    ls --help     # short summary of options
-    man ls        # full manual (press q to quit)
-    ```
+>[!TIP]
+> "Getting help"
+>    Almost every command explains itself:
+>    ```bash
+>    ls --help     # short summary of options
+>    man ls        # full manual (press q to quit)
+>    ```
 
-!!! tip "Two habits that save hours"
-    - Press **Tab** to auto-complete file and folder names.
-    - Press **↑ (Up arrow)** to bring back previous commands.
+>[!TIP]
+>"Two habits that save hours"
+>    - Press **Tab** to auto-complete file and folder names.
+>    - Press **↑ (Up arrow)** to bring back previous commands.
 
 ---
 
