@@ -11,7 +11,7 @@
 | • [File Operations](#working-with-files-and-folders) | • [Resources](#further-learning) |
 
 
-> [!!IMPORTANT]
+> [!IMPORTANT]
 > **🕐 Schedule**
 >
 > - 0:00–0:10 — Welcome and why the command line matters
